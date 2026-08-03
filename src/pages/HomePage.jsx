@@ -6,10 +6,10 @@ import FeaturedEventsSection from '../components/sections/FeaturedEventsSection'
 import ImpactStatsSection from '../components/sections/ImpactStatsSection';
 import CTASection from '../components/sections/CTASection';
 
-export default function HomePage() {
+export default function HomePage({ onNavigate }) {
   return (
     <div className="font-body-md text-on-surface antialiased">
-      <Header />
+      <Header onNavigate={onNavigate} />
 
       <main>
         <HeroSection />
